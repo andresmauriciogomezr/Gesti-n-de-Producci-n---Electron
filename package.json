@@ -1,0 +1,49 @@
+{
+  "name": "gesti-n-de-producci-n---electron",
+  "version": "1.0.0",
+  "description": "Gestion de produccion - electron",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron  .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmauriciogomezr/Gesti-n-de-Producci-n---Electron.git"
+  },
+  "author": "Andres Gomez",
+  "license": "ISC",
+  "build": {
+    "appId": "gestion-produccion",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/andresmauriciogomezr/Gesti-n-de-Producci-n---Electron/issues"
+  },
+  "homepage": "https://github.com/andresmauriciogomezr/Gesti-n-de-Producci-n---Electron#readme",
+  "devDependencies": {
+    "electron-builder": "^19.45.4"
+  },
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
