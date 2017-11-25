@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="production-app">
 <head>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Gestión de Producción</title>
 
-    <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
-    <script type="text/javascript" src="./node_modules/angular-rout/angular-rout.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
 </head>
 <body>
 
@@ -60,7 +60,7 @@
             </ul>
             <ul class="sidebar-nav" id="sidebar">
                 <li><a href="">Lista de Materiales</a></li>
-                <li><a href="">Productos South Cone</a></li>
+                <li><a href="#products">Productos South Cone</a></li>
                 <li><a href="">Rutas de Producción</a></li>
             </ul>
 
@@ -82,14 +82,10 @@
 
 <div class=" body-content" style="margin-left:180px;">
 
-		<div class="row">
-		<div class="col-xs-10 col-sm-offset-1">
-			<img src="images/fondo2.png" class="img-responsive" alt="Responsive image">
-		</div>
-		</div>
+    <ng-view></ng-view>
+        
 
-		<div class="row">
-
+        <div class="row">
         <footer class="text-center" style="font-size: 11px;">
         	<hr/>
         	<p>South Cone Home S.A de C.V con domicilio en calle Nordica N° 8700, Módulos II Y III. Parque industrial Nórdica, tel 664 626 59 21
@@ -107,6 +103,7 @@
 
 <script> window.$ = window.jQuery = require('./components/jquery-3.2.1.min.js')</script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/renderer.js"></script>
 <script >
 </script>
 </html>
