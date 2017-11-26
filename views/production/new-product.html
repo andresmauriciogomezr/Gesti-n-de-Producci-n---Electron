@@ -1,0 +1,188 @@
+<div class="row" >
+	<div class="col-xs-12">
+			<h3>Productos/Nuevo</h3>
+			<hr>
+	</div>
+</div>
+
+<div class="row" >
+
+	<div class="col-xs-11" style="margin-left: 10px;">
+		<div class="row panel panel-default" >
+			
+			<div class="panel-heading">	
+				<button class="btn btn-success btn-sm">Guardar</button>
+				<button class="btn btn-danger btn-sm">Descartar</button>
+			</div>
+
+				<form class="col-xs-12 panel-body">
+
+					<!-- nombre y categoría -->
+					<div class="row">
+
+					  <div class="form-group col-xs-6 col-sm-offset-2">
+					    <label for="productName">Nombre del Producto:</label>
+					    <input type="text" class="form-control input-sm" id="productName-input" name="productName">
+					  </div>
+
+					  <div class="form-group col-xs-6 col-sm-offset-2">
+					    <label for="productCategory">Categoría:</label>
+					    <input type="text" class="form-control input-sm" id="productCategory">
+					  </div>
+					  
+					</div>
+					<!-- nombre y categoría -->
+
+
+					<!-- checBox -->
+					<div class="row">
+
+						<div class="col-sm-offset-1">
+						  <label class="checkbox-inline"><input type="checkbox" value="">Puede ser vendido</label>
+						  
+						  <label class="checkbox-inline" style="padding-left: 100px;"><input type="checkbox" value="">Puede ser comprado</label>
+
+						</div>
+
+					</div>
+					<!-- / checBox -->
+
+					<!-- Grupo de botones -->
+					<br>
+					<div class="row" align="center">
+						<div class="col-xs-12" role="" aria-label="...">
+						  <button type="button" class="btn btn-primary btn-sm " style="margin-left: -90px;">Información</button>
+						  <button type="button" class="btn btn-primary btn-sm newProduct-buttonGroup" onclick="Javascript : $('#catering_modal').modal().show();">Abastecimiento</button>
+						  <button type="button" class="btn btn-primary btn-sm newProduct-buttonGroup">inventario</button>
+						  <button type="button" class="btn btn-primary btn-sm newProduct-buttonGroup">Ventas</button>
+						  <button type="button" class="btn btn-primary btn-sm newProduct-buttonGroup">Contabilidad</button>
+						</div>
+					</div>
+					<!-- / Grupo de botones -->
+					
+
+					<br>
+					<br>
+					<div class="row">
+						<div class="form-inline col-xs-12">
+
+							<div class="form-group" style="margin-left: 30px;">
+							    <label for="productType">Tipo de producto:</label>
+							    <input type="text" class="form-control input-sm" id="">
+						  	</div>
+
+
+						  	<div class="form-group col-sm-offset-1">
+							    <label for="productType">Referencia Interna:</label>
+							    <input type="text" class="form-control input-sm" id="">
+						  	</div>
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="form-inline col-xs-12">
+
+							<div class="form-group" style="margin-left: 40px;">
+							    <label for="productType">Precio de venta:</label>
+							    <input type="text" class="form-control input-sm" id="">
+						  	</div>
+
+
+						  	<div class="form-group " style="margin-left: 145px;">
+							    <label for="productType">Código:</label>
+							    <input type="text" class="form-control input-sm" id="">
+						  	</div>
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="form-group col-xs-12">
+							<textarea class="form-control" rows="4" placeholder="DESCRIBE THE PRODUCT CHARACTERISTCS"></textarea>
+						</div>
+					</div>
+
+				</form>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- Modal Para abastecimiento -->
+    <div id="catering_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog " role="document" style="">
+
+            <div class="modal-content">
+
+                <div class="modal-header modal-header-color">
+                    <button type="button" class="close" style="color:black;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4>Abastecimiento</h3>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+
+
+                    	<form class="col-xs-12 form-inline">
+
+							
+
+							  <div class="form-group" style="margin-left: 20px;">
+							    <label for="caterignMethod">Método Almacenamiento:</label>
+							    <input type="text" class="form-control input-sm" id="caterignMethod-input" name="caterignMethod">
+							  </div>
+
+							  <div class="form-group">
+							    <label for="productCategory">Método de Almacenamiento:</label>
+							    <input type="text" class="form-control input-sm" id="productCategory">
+							  </div>
+							  	
+							  <br>
+							  <br>
+							  <div class="form-group">
+							    <label for="productCategory">Precio:</label>
+							    <input type="text" class="form-control input-sm" id="productCategory">
+							  </div>
+
+
+							  <br>
+							  <br>
+							  <br>
+							  <div class="form-group">
+							    <label for="productCategory">Retrasos</label>
+							  </div>
+
+							  <br>
+							  <div class="form-group">
+							    <label for="productCategory">Plazo de entrega de fabricación:</label>
+							    <input type="text" class="form-control input-sm" id="productCategory">
+							  </div>
+
+							</div>
+
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Activo</label>
+							</div>
+							
+
+						</form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- / Modal Para abastecimiento -->

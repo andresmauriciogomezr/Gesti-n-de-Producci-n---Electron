@@ -41,11 +41,10 @@
   },
   "homepage": "https://github.com/andresmauriciogomezr/Gesti-n-de-Producci-n---Electron#readme",
   "devDependencies": {
-    "electron-builder": "^19.45.4"
+    "electron-builder": "^19.46.4"
   },
   "dependencies": {
     "angular": "^1.2.25",
-    "angular-route": "^1.2.25",
-    "electron": "^1.7.9"
+    "angular-route": "^1.2.25"
   }
 }

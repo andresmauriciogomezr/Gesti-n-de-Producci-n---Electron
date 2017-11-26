@@ -1,0 +1,64 @@
+<!--  Menú Lateral -->
+<div id="wrapper" class="active col-xs-2">
+        <div id="sidebar-wrapper" style="margin-top: -20px">
+            
+            <ul id="sidebar_menu" class="sidebar-nav" >
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Fabricación</a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="">Órdenes de Produccion</a></li>
+                <li><a href="">Órdenes de Trabajo</a></li>
+            </ul>
+
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Planificación</a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="">Planificación de Órdenes</a></li>
+                <li><a href="">Órdees de T por rescurso</a></li>
+            </ul>
+
+
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Productos</a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="">Lista de Materiales</a></li>
+                <li><a href="" onclick="javascript : $('.production-panel').hide();$('#newProduct-panel').show()">Productos South Cone</a></li>
+                <li><a href="">Rutas de Producción</a></li>
+            </ul>
+
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Configuración</a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a href="">Recursos</a></li>
+                <li><a href="">Componentes Lista Mtrls</a></li>
+                <li><a href="">Centro de Producción</a></li>
+                <li><a href="">Grupo de Propiedades</a></li>
+            </ul>
+
+        </div>
+
+</div>
+<!-- /  Menú Lateral -->
+
+<div class="row production-panel">
+    <div class="col-xs-10 col-sm-offset-1">
+        <img src="images/fondo2.png" class="img-responsive" alt="Responsive image">
+    </div>
+</div>
+
+<!-- Nuevo Producto -->
+<div id="newProduct-panel" class="production-panel" ng-include src="'./views/production/new-product.html'" hidden></div>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        function showNewProductPanel(){
+            
+        }
+    });
+</script>
